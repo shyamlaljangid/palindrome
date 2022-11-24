@@ -17,8 +17,10 @@
          let para = document.querySelector("p")
          let button= document.querySelector("button")
          button.onclick= ()=>{
-
-            if(inp.value=== inp.value.split('').reverse().join('')){
+               
+            let right =  inp.value.toLowerCase();
+             let left =  right.split('').reverse().join('')
+            if(right===  left){
               
                 para.innerHTML = "word is a palidrome"}
             else{
